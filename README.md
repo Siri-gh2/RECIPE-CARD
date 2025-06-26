@@ -73,3 +73,11 @@ Modify colors, fonts, and backgrounds easily from style.css to match your desire
 Designed and developed as a part of an educational web development project.
 
 Images from google.
+
+![Image](https://github.com/user-attachments/assets/90f2219c-7883-459e-ac09-2056488be73c)
+![Image](https://github.com/user-attachments/assets/e2f1d268-e33c-4c13-a338-ab8d37a2fafe)
+![Image](https://github.com/user-attachments/assets/d083a628-c763-43b1-8773-10fb3234da79)
+![Image](https://github.com/user-attachments/assets/8d6b745b-0a91-4d6a-9ae0-e559afe3b294)
+![Image](https://github.com/user-attachments/assets/009b6902-e040-45df-abe6-570bf40e5b39)
+![Image](https://github.com/user-attachments/assets/e767e30b-e75a-4d96-8128-d3903faa7117)
+![Image](https://github.com/user-attachments/assets/e78d237a-4885-44f3-bac5-c549fc75b85a)
