@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vanilla Ice Cream Recipe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="recipe-card">
+    <h1 class="title">🍦 Vanilla Ice Cream</h1>
+    <img src="https://tse2.mm.bing.net/th?id=OIP.cS-vantzMfqxGxBAvrOgLgHaHa&pid=Api&P=0&h=180" alt="Vanilla Ice Cream" class="recipe-image"/>
+
+    <div class="info">
+      <p>⏱️ Prep Time: 20 mins + freezing</p>
+      <p>🍽️ Serves: 4</p>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleSection('ingredients')">Show Ingredients</button>
+    <ul id="ingredients" class="hidden section">
+      <li>2 cups heavy cream</li>
+      <li>1 cup whole milk</li>
+      <li>3/4 cup sugar</li>
+      <li>1 tbsp vanilla extract</li>
+      <li>Pinch of salt</li>
+    </ul>
+
+    <button class="toggle-btn" onclick="toggleSection('steps')">Show Steps</button>
+    <ol id="steps" class="hidden section">
+      <li>In a bowl, mix sugar, milk, and salt until sugar dissolves.</li>
+      <li>Stir in heavy cream and vanilla extract.</li>
+      <li>Pour the mixture into an ice cream maker.</li>
+      <li>Churn according to manufacturer’s instructions (about 20 mins).</li>
+      <li>Transfer to an airtight container and freeze for 2-3 hours until firm.</li>
+      <li>Scoop and enjoy your creamy vanilla ice cream!</li>
+    </ol>
+
+    <div class="buttons">
+      <button class="start-btn" onclick="startCooking()">Start Cooking</button>
+      <button class="next-btn" onclick="nextStep()" disabled>Next</button>
+    </div>
+
+    <div class="progress-container">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
+
+    <div id="timer" class="timer">⏳ 00:00</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

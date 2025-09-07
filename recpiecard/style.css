@@ -1,0 +1,144 @@
+/* Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 2.8rem;
+  color: #b33939;
+}
+
+/* Image */
+.recipe-image {
+  width: 100%;
+  border-radius: 15px;
+  margin: 15px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Info */
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 8px 4px;
+  background: linear-gradient(45deg, #f67280, #c06c84);
+  color: white;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(198, 106, 120, 0.4);
+}
+
+/* Sections */
+.section li {
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #fff5f8;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.section li:hover {
+  background: #ffe3ea;
+}
+
+.hidden {
+  display: none;
+}
+
+.active-step {
+  background: #ffe0e0 !important;
+  border-left: 4px solid #b33939;
+  font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 100%;
+  height: 12px;
+  background: #eee;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: #b33939;
+  transition: width 0.5s ease;
+}
+
+/* Timer */
+.timer {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .info {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .recipe-card {
+    width: 100%;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  .toggle-btn, .start-btn, .next-btn, .progress-container, .timer {
+    display: none;
+  }
+  .hidden {
+    display: block !important;
+  }
+}
